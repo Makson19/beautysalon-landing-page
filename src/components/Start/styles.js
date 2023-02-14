@@ -8,9 +8,9 @@ export const sectionStart = css`
   @media (min-width: 1024px) {
     padding: 8.4rem 0 17.2rem 0;
     .container {
+      align-items: center;
       display: flex;
       flex-direction: row-reverse;
-      align-items: center;
       justify-content: space-between;
       padding: 0 7.1rem 0 12.3rem;
     }
@@ -31,35 +31,35 @@ export const img = css`
 `;
 
 export const content = css`
-  text-align: center;
   padding: 3.2rem 2.4rem 0;
+  text-align: center;
   h1 {
+    color: #0F241D;
     font-size: 3rem; 
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 1.6rem;
-    color: #0F241D;
   }
 
   p {
+    color: #767676;
     font-family: "DM Sans", sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.1rem;
-    color: #767676;
     margin-bottom: 3.2rem;
   }
 
   a {
+    color: #f9f9f9;
+    background: #FF3366;
+    border-radius: 0.4rem;
     display: inline-block;
     font-family: "DM Sans", sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.1rem;
-    color: #f9f9f9;
-    background: #FF3366;
     padding: 1.4rem 3.2rem 1.5rem;
-    border-radius: 0.4rem;
     transition: all 0.4s ease-out;
 
     &:hover {
@@ -69,9 +69,9 @@ export const content = css`
   }
 
   @media (min-width: 1024px) {
-    text-align: left;
-    padding: 0 2rem 0 0;
     max-width: 39.6rem;
+    padding: 0 2rem 0 0;
+    text-align: left;
 
     h1 {
       font-size: 3.6rem;
