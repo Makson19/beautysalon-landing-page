@@ -1,13 +1,10 @@
-import React from "react"
+import React from "react";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Start from "../components/Start";
 import Divider from "../components/Divider";
 import About from "../components/About";
-import Seo from "../components/seo"
-// import * as styles from "../components/index.module.css"
-
-
+import Seo from "../components/seo";
 
 const IndexPage = () => (
   <Layout pageTitle="Beauty Salon">

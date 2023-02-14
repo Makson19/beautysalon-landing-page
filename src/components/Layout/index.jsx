@@ -4,9 +4,9 @@ import { Fragment, useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Global, css } from "@emotion/react";
 import { AnglesUp } from "@styled-icons/fa-solid/AnglesUp";
-import AOS from 'aos';
+import AOS from "aos";
 
-import { showIt } from './styles';
+import { showIt } from "./styles";
 
 const GlobalStyles = () => {
   return (
@@ -18,7 +18,6 @@ const GlobalStyles = () => {
         margin: 0;
         box-sizing: border-box;
         font-size: 62.5%; /* =10px  */
-        /* overflow-x: hidden; */
       }
 
       body, html {
@@ -79,37 +78,8 @@ const Layout = ({ pageTitle, children }) => {
     };
   }, [scrollTop]);
 
-  // const { site } = useStaticQuery(
-  //   graphql`
-  //     query {
-  //       site {
-  //         siteMetadata {
-  //           title
-  //           description
-  //           author
-  //         }
-  //       }
-  //     }
-  //   `
-  // )
-
-  // const metaDescription = site.siteMetadata.description
-  // const defaultTitle = site.siteMetadata?.title
-
   return (
     <Fragment>
-      {/* <Helmet htmlAttributes={{lang: "pt-br"}}>
-        <title>{pageTitle}</title>
-        <meta name="description" content={metaDescription} />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={metaDescription} />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
-        <meta name="twitter:title" content={pageTitle} />
-        <meta name="twitter:description" content={metaDescription} />
-      </Helmet> */}
-
       <div id="wrapper">
         <GlobalStyles />
         {children}
@@ -126,7 +96,6 @@ const Layout = ({ pageTitle, children }) => {
           </ScrollLink>
         ) : null}
       </div>
-
     </Fragment>
   )
 }
