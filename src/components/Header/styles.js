@@ -2,19 +2,19 @@
 import { css } from "@emotion/react";
 
 export const header = css`
-  height: 7.2rem;
-  display: flex;
   align-items: center;
   background: #f9f9f9;
   border-bottom: 1px solid #e4e4e4;
+  display: flex;
+  height: 7.2rem;
   
   .container {
-    position: relative;
-    padding: 0 12.3rem;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    display: flex;
     height: 100%;
+    justify-content: space-between;
+    padding: 0 12.3rem;
+    position: relative;
   }
 
   @media (max-width: 768px) {
@@ -26,51 +26,52 @@ export const header = css`
 
 export const logo = css`
   display: block;
-  width: 16.4rem;
   height: 2.5rem;
+  width: 16.4rem;
   img {
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 
   @media (max-width: 768px) {
-    width: 14.4rem;
     height: 3.2rem;
+    width: 14.4rem;
   }
 `;
 
 export const navbar = css`
   height: 100%;
   ul {
-    height: 100%;
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
+    display: inline-flex;
     gap: 3.2rem;
+    height: 100%;
+    justify-content: center;
 
     li {
-      height: 100%;
-      display: flex;
       align-items: center;
+      display: flex;
+      height: 100%;
       a {
+        align-items: center;
+        color: #0F241D;
+        display: inline-flex;
         font-size: 1.6rem;
         font-weight: 400;
-        line-height: 2.1rem;
-        display: inline-flex;
-        align-items: center;
         height: 100%;
+        line-height: 2.1rem;
         position: relative;
         transition: all 0.3s ease-out;
 
         &::after {
           content: "";
-          width: 0px;
-          height: 0.2rem;
-          position: absolute;
-          left: 0;
-          top: calc(100% - 2px);
           background-color: #FF3366;
+          height: 0.2rem;
+          left: 0;
+          position: absolute;
+          top: calc(100% - 2px);
           transition: all 0.3s ease-out;
+          width: 0px;
         }
 
         &:hover {
