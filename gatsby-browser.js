@@ -6,3 +6,4 @@
 
 // You can delete this file if you're not using it
 import 'animate.css';
+import 'aos/dist/aos.css';

@@ -1,11 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
-import React, { useState, useEffect } from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { Fragment, useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Global, css } from "@emotion/react";
-import { Helmet } from "react-helmet";
-import { AnglesUp } from "@styled-icons/fa-solid/AnglesUp"
+import { AnglesUp } from "@styled-icons/fa-solid/AnglesUp";
+import AOS from 'aos';
 
 import { showIt } from './styles';
 
@@ -63,6 +62,12 @@ const Layout = ({ pageTitle, children }) => {
   };
 
   useEffect(() => {
+    AOS.init({
+      duration : 1000
+    });
+  }, []);
+
+  useEffect(() => {
     window.addEventListener("scroll", handleScrollTop);
     return () => {
       window.removeEventListener("scroll", handleScrollTop);
@@ -87,7 +92,7 @@ const Layout = ({ pageTitle, children }) => {
   // const defaultTitle = site.siteMetadata?.title
 
   return (
-    <>
+    <Fragment>
       {/* <Helmet htmlAttributes={{lang: "pt-br"}}>
         <title>{pageTitle}</title>
         <meta name="description" content={metaDescription} />
@@ -117,7 +122,7 @@ const Layout = ({ pageTitle, children }) => {
           <AnglesUp />
         </ScrollLink>
       ) : null}
-    </>
+    </Fragment>
   )
 }
 
