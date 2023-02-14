@@ -18,6 +18,11 @@ const GlobalStyles = () => {
         margin: 0;
         box-sizing: border-box;
         font-size: 62.5%; /* =10px  */
+        /* overflow-x: hidden; */
+      }
+
+      body, html {
+        overflow-x: hidden;
       }
 
       body {
@@ -108,20 +113,20 @@ const Layout = ({ pageTitle, children }) => {
       <div id="wrapper">
         <GlobalStyles />
         {children}
+        {scrollTop === true ? (
+          <ScrollLink
+            css={showIt}
+            to="wrapper"
+            smooth={true}
+            duration={500}
+            id="backToTop"
+            className="scroll-to-top"
+          >
+            <AnglesUp />
+          </ScrollLink>
+        ) : null}
       </div>
 
-      {scrollTop === true ? (
-        <ScrollLink
-          css={showIt}
-          to="wrapper"
-          smooth={true}
-          duration={500}
-          id="backToTop"
-          className="scroll-to-top"
-        >
-          <AnglesUp />
-        </ScrollLink>
-      ) : null}
     </Fragment>
   )
 }

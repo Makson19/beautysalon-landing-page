@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Start from "../components/Start";
 import Divider from "../components/Divider";
+import About from "../components/About";
 import Seo from "../components/seo"
 // import * as styles from "../components/index.module.css"
 
@@ -13,6 +14,8 @@ const IndexPage = () => (
     <Header />
     <Start />
     <Divider from="#FF3366" to="#F7779734" />
+    <About />
+    <Divider from="#F7779734" to="#FF3366" />
   </Layout>
 )
 
