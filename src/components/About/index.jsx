@@ -2,7 +2,7 @@
 import { jsx } from "@emotion/react";
 
 import Image from "../../images/image02.png";
-import { sectionAbout, image, content, text } from "./About.styles.js";
+import { sectionAbout, image, content, text } from "./styles.js";
 
 const About = () => {
   return (
