@@ -12,7 +12,7 @@ import { showIt } from './styles';
 const GlobalStyles = () => {
   return (
     <Global styles={css`
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
       * {
         padding: 0;
@@ -69,26 +69,26 @@ const Layout = ({ pageTitle, children }) => {
     };
   }, [scrollTop]);
 
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
-        }
-      }
-    `
-  )
+  // const { site } = useStaticQuery(
+  //   graphql`
+  //     query {
+  //       site {
+  //         siteMetadata {
+  //           title
+  //           description
+  //           author
+  //         }
+  //       }
+  //     }
+  //   `
+  // )
 
-  const metaDescription = site.siteMetadata.description
+  // const metaDescription = site.siteMetadata.description
   // const defaultTitle = site.siteMetadata?.title
 
   return (
     <>
-      <Helmet htmlAttributes={{lang: "pt-br"}}>
+      {/* <Helmet htmlAttributes={{lang: "pt-br"}}>
         <title>{pageTitle}</title>
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content={pageTitle} />
@@ -98,7 +98,7 @@ const Layout = ({ pageTitle, children }) => {
         <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={metaDescription} />
-      </Helmet>
+      </Helmet> */}
 
       <div id="wrapper">
         <GlobalStyles />
