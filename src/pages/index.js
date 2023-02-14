@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Start from "../components/Start";
+import Divider from "../components/Divider";
 import Seo from "../components/seo"
 // import * as styles from "../components/index.module.css"
 
@@ -11,6 +12,7 @@ const IndexPage = () => (
   <Layout pageTitle="Beauty Salon">
     <Header />
     <Start />
+    <Divider from="#FF3366" to="#F7779734" />
   </Layout>
 )
 
