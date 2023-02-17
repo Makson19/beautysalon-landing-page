@@ -22,6 +22,7 @@ const GlobalStyles = () => {
 
       body, html {
         overflow-x: hidden;
+        scroll-behavior: smooth;
       }
 
       body {

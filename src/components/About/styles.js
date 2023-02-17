@@ -5,7 +5,7 @@ export const sectionAbout = css`
   padding: 8rem 0;
   
   @media (min-width: 1024px) {
-    padding: 16rem 0;
+    padding: 17rem 0;
     .container {
       display: flex;
       justify-content: space-between;
