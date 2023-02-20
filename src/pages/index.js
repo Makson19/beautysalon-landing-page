@@ -5,6 +5,7 @@ import Start from "../components/Start";
 import Divider from "../components/Divider";
 import About from "../components/About";
 import Services from "../components/Services";
+import Testimonials from "../components/Testimonials";
 import Seo from "../components/seo";
 
 const IndexPage = () => (
@@ -16,6 +17,8 @@ const IndexPage = () => (
     <Divider from="#F7779734" to="#FF3366" />
     <Services />
     <Divider from="#FF3366" to="#F7779734" />
+    <Testimonials />
+    <Divider from="#F7779734" to="#FF3366" />
   </Layout>
 )
 
