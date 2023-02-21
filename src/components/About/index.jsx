@@ -6,7 +6,7 @@ import { sectionAbout, image, content, text } from "./styles.js";
 
 const About = () => {
   return (
-    <section css={sectionAbout}>
+    <section css={sectionAbout} id="about">
       <div className="container">
         <div css={image} data-aos="fade" data-aos-delay="800">
           <img src={Image} alt="mulheres segurando ferramentas de salão de beleza" />

@@ -6,7 +6,7 @@ export const sectionStart = css`
   padding: 3.2rem 0 7.9rem 0;
   
   @media (min-width: 1024px) {
-    padding: 10.4rem 0 19.2rem 0;
+    padding: 11.4rem 0 19.2rem 0;
     .container {
       align-items: center;
       display: flex;

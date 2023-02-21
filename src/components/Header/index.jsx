@@ -26,16 +26,16 @@ const Header = () => {
               <Link to="#">Início</Link>
             </li>
             <li>
-              <Link to="#">Sobre</Link>
+              <Link to="#about">Sobre</Link>
             </li>
             <li>
-              <Link to="#">Serviços</Link>
+              <Link to="#services">Serviços</Link>
             </li>
             <li>
-              <Link to="#">Depoimentos</Link>
+              <Link to="#testimonials">Depoimentos</Link>
             </li>
             <li>
-              <Link to="#">Contato</Link>
+              <Link to="#contact">Contato</Link>
             </li>
           </ul>
         </nav>
