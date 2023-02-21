@@ -29,7 +29,7 @@ O Beauty Salon Landing Page foi um projeto desenvolvido durante o evento #NLW6 p
 
 ### Links
 
-- Live Site URL: [Demo]()
+- Live Site URL: [Demo](https://beautysalonapp.netlify.app/)
 
 
 ## Tecnologias

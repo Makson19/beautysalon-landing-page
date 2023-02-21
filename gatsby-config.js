@@ -12,7 +12,7 @@ module.exports = {
     title: `Beauty Salon`,
     description: `Um salão exclusivo em São Paulo, especializado em tratamentos naturais.`,
     author: `@Makson`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://beautysalonapp.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-image`,
